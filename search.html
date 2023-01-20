@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>One-Working</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com" />
+ 
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+
+	<!-- start header -->
+		<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-Bistro=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><img src="img/logo.jpeg" height="80" alt="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Accueil</a></li>
+						<li><a href="about.html">Qui somme nous ?</a></li>
+						<li><a href="services.html">Services</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="maps.html">Maps (coming soon)</a></li>
+                        <li><a href="pricing.html">Tarifs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header><!-- end header -->
+	
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<style>
+					* {
+					box-sizing: border-box;
+					}
+					
+					#myInput {
+					background-image: url('/css/searchicon.png');
+					background-position: 10px 12px;
+					background-repeat: no-repeat;
+					width: 100%;
+					font-size: 16px;
+					padding: 12px 20px 12px 40px;
+					border: 1px solid #ddd;
+					margin-bottom: 12px;
+					}
+					
+					#myUL {
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
+					}
+					
+					#myUL li a {
+					border: 1px solid #ddd;
+					margin-top: -1px; /* Prevent double borders */
+					background-color: #f6f6f6;
+					padding: 12px;
+					text-decoration: none;
+					font-size: 18px;
+					color: black;
+					display: block
+					}
+					
+					#myUL li a:hover:not(.header) {
+					background-color: #eee;
+					}
+					</style>
+					</head>
+					<body>
+					
+					<div class="aligncenter"><h1 class="aligncenter">Search here</h1></div>
+					
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+					
+					<ul id="myUL">
+					<li><a href="#">Designer(se) UX</a></li>
+					<li><a href="#">Designer(se) UI</a></li>
+					
+					<li><a href="#">Graphiste logo</a></li>
+					<li><a href="#">Graphiste identité</a></li>
+					
+					<li><a href="#">Developpeur(se) fullstack</a></li>
+					<li><a href="#">Developpeur(se) frontend</a></li>
+					<li><a href="#">Developpeur(se) backend</a></li>
+
+					<li><a href="#">Photographe</a></li>
+					<li><a href="#">Comptable</a></li>
+					<li><a href="#">Consultant(e)</a></li>
+
+					</ul>
+					
+					<script>
+					function myFunction() {
+						var input, filter, ul, li, a, i, txtValue;
+						input = document.getElementById("myInput");
+						filter = input.value.toUpperCase();
+						ul = document.getElementById("myUL");
+						li = ul.getElementsByTagName("li");
+						for (i = 0; i < li.length; i++) {
+							a = li[i].getElementsByTagName("a")[0];
+							txtValue = a.textContent || a.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								li[i].style.display = "";
+							} else {
+								li[i].style.display = "none";
+							}
+						}
+					}
+					</script>
+				</body>
+				</div>
+			</div>
+    </div>
+
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Nous contacter</h5>
+					<address>
+					<strong></strong><br>
+					HEC Paris x 42 x Strate Academie<br>
+                    755 rue du Paris, Paris, France</address>
+					<p>
+						<i class="icon-phone"></i>+3306 12222222<br>
+						<i class="icon-envelope-alt"></i> contac@one-working.fr
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; ONE-Working 2023 Tous droits réservés. Par la Team's Lactiques </span><a href="XX" Bistro="_blank">WebLactiques</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script> 
+<script src="js/portfolio/jquery.quicksand.js"></script>
+<script src="js/portfolio/setting.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
